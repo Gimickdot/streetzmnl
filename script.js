@@ -91,6 +91,7 @@ function validateRegistration(event)
 
   if (email.value !== confirmEmail.value || !email.value.includes('@')) 
   {
+    alert('Email does not match');
     email.classList.add('is-invalid');
     confirmEmail.classList.add('is-invalid');
     isValid = false;
@@ -98,6 +99,7 @@ function validateRegistration(event)
 
   if (password.value !== confirmPassword.value) 
   {
+    alert('Password does not match');
     password.classList.add('is-invalid');
     confirmPassword.classList.add('is-invalid');
     isValid = false;
