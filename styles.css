@@ -1,0 +1,353 @@
+body 
+{
+  background-color: #ffffff; 
+}
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+.section 
+{
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+/*START NG NAVBAR*/
+.navbar 
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-custom 
+{
+  background-color: #ffffff; 
+}
+
+.navbar-custom .nav-link 
+{
+  color: #ffffff; 
+  font-size: 18px;
+  margin-right: 20px; 
+}
+
+.navbar-custom .nav-link:hover 
+{
+  color: #fffb00; 
+}
+
+.navbar-cart-icon 
+{
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-cart-icon-container 
+{
+  margin-left: 10px;
+}
+
+.carousel-item video 
+{
+  height: calc(100vh - 100px);
+  object-fit: cover;
+}
+
+.dropdown-item:focus 
+{
+  background-color: #ffffff; 
+  color: #fff; 
+}
+/*END NG NAVBAR*/
+
+/*START NG VIDEO CAROUSEL*/
+.imageVideo 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+/*END NG VIDEO CAROUSEL*/
+
+/*START NG FEATURED */
+h1 
+{
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+h2 
+{
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.collections 
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.collection-item 
+{
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.collection-item img 
+{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.collection-name 
+{
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) 
+{
+  .collections 
+  {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) 
+{
+  .collections 
+  {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) 
+{
+  .collections 
+  {
+      grid-template-columns: 1fr;
+  }
+}
+/*END NG FEATURED */
+
+/*START NG LATEST*/
+.latest 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 45px;
+}
+
+.latest-item 
+{
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 0 21%;
+  max-width: 300px;
+  margin-left: 15px;
+  position: relative;
+  width: 500px;
+}
+
+.latest-item img 
+{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.shoe-image, .shoe-image-hover 
+{
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+.shoe-image-hover 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.latest-item:hover .shoe-image 
+{
+  opacity: 0;
+}
+
+.latest-item:hover .shoe-image-hover 
+{
+  opacity: 1;
+}
+
+.collection-name 
+{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.collection-name {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) 
+{
+  .latest-item 
+  {
+      flex: 1 0 30%;
+  }
+}
+
+@media (max-width: 768px) 
+{
+  .latest-item 
+  {
+      flex: 1 0 45%;
+  }
+}
+
+@media (max-width: 480px) 
+{
+  .latest-item 
+  {
+      flex: 1 0 100%;
+  }
+}
+
+.btn-group 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn 
+{
+  margin: 10px;
+}
+/*END NG LATEST*/
+
+
+/*REQUIRED COLOR*/
+.highlightedText2
+{
+  color: red;
+}
+/*END NG REQUIRED COLOR*/
+
+
+/* FOOTER CSS */
+.footer-links a 
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+footer h5 
+{
+  line-height: 4.5;
+}
+
+footer ul li 
+{
+  line-height: 2;
+}
+
+footer .row.justify-content-between 
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  margin-left: 190px;
+}
+
+footer a.text-white 
+{
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-align 
+{
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  white-space: nowrap; 
+  position: relative;
+  z-index: 10;
+}
+
+.footerH5First 
+{
+  margin-right: 70px;
+  margin-bottom: 0px;
+}
+
+.footerH5Second 
+{
+  margin-top: 10px; 
+}
+
+.social-icon 
+{
+  display: inline-block; 
+  margin-top: -10px;
+  margin-left: 29px;     
+  vertical-align: middle;
+}
+
+.cash-icon 
+{
+  display: inline-block; 
+  margin-top: -40px;
+  margin-right: -14px;    
+  vertical-align: middle;
+}
+
+.clickable-h5 
+{
+  cursor: pointer;
+}
+/* END OF FOOTER CSS */
+
+/* END NG FADE IN PAG NAG LOAD*/
+
+/*BACK TO TOP BUTTON*/
+#btn-back-to-top 
+{
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  display: none;
+  border-radius:50% ;
+}
+/*END NG BACK TO TOP BUTTON*/

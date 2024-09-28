@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreetzMNL</title>
+
+  <!-- CSS LINKS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- END NG CSS LINKS -->
+</head>
+<body class="loaded">
+
+<!-- NAVBAR PART -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-custom fixed-top">
+  <div class="container">
+    <a href="index.html"><img src="./assets/images/smnlLogo.png" alt="Logo" height="60"></a>
+    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#featured-heading">Featured Brands</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#latest-heading">Latest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">About Us</a>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</button>
+      <button type="button" class="btn btn-secondary ms-2" data-bs-toggle="modal" data-bs-target="#registerModal">Join Us</button>
+      <span class="navbar-cart-icon-container">
+        <a href="#.html"><img src="./assets/images/basket.png" class="navbar-cart-icon"></a>
+      </span>
+    </div>
+  </div>
+</nav>
+<!-- END NG NAVBAR PART -->
+
+<!-- CAROUSEL PART -->
+<div id="carouselIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video class="d-block w-100 video-blur" alt="Slide 1" autoplay muted loop poster="./assets/images/MNL.png">
+        <source src="./assets/videos/stockVideo.mp4" type="video/mp4" class="carouselVid">
+      </video>
+      <div class="imageVideo">
+        <img src="./assets/images/MNL.png" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END NG CAROUSEL PART -->
+
+<br><br>
+
+<!-- WEBSITE CONTENT -->
+<div id="featured-heading" class="section"></div>
+<div class="container" data-aos="zoom-in">
+  <div class="my-5">
+    <div class="row">
+      <div class="col-md-12">     
+        <center>
+          <h1>Stepping into style is just the beginning<br>where every pair tells a story</h1>
+          <br>
+          <h2>THE ONLY WAY TO WIN IS TO OUTWORK EVERYBODY ELSE.</h2>
+        </center>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <button class="btn btn-dark">SHOP NOW</button>
+      </div>
+
+      <br><br><br><br>
+
+      <div class="featured-brands">
+        <h1>Featured Brands</h1>
+        <div class="collections">
+          <div class="collection-item">
+            <img src="./assets/images/NikeLogo.png" class="img-fluid" alt="Nike Logo">
+            <div class="collection-name">Nike</div>
+          </div>
+          <div class="collection-item">
+            <img src="./assets/images/AdidasLogo.png" class="img-fluid" style="margin-top: 20px;" alt="Adidas Logo">
+            <div class="collection-name">Adidas</div>
+          </div>
+          <div class="collection-item">
+            <img src="./assets/images/ConverseLogo.png" class="img-fluid" style="margin-top: 28px;" alt="Converse Logo">
+            <div class="collection-name" style="margin-top: -20px;">Converse</div>
+          </div>
+          <div class="collection-item">
+            <img src="./assets/images/WorldBalLogo.png" class="img-fluid" style="margin-top: 50px;"  alt="World Balance Logo">
+            <div class="collection-name" style="margin-top: -45px;">World Balance</div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br>
+
+<!-- LATEST RELEASE -->
+<div id="latest-heading" class="section"></div>
+<div class="container" data-aos="zoom-in">
+  <div class="my-5">
+    <div class="row">
+      <h1>Latest Release</h1>    
+      <div class="btn-group">
+        <button type="button" class="btn btn-dark" onclick="showImages('sports')">Sports</button>
+        <button type="button" class="btn btn-dark" onclick="showImages('casual')">Casual</button>
+        <button type="button" class="btn btn-dark" onclick="showImages('running')">Running</button>
+      </div>
+      
+      <div class="latest row">
+        <div id="sports-images" class="collection-category col-12">
+          <div class="row">
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/adidasSports1.png" alt="Adidas Adizero S12" class="shoe-image">
+              <img src="./assets/images/adidasSports1-1.png" alt="Sports Adizero S12 Hover" class="shoe-image-hover">
+              <div class="collection-name">Adidas Adizero S12</div>
+            </div>
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/nikeSports1.png" alt="Nike Invincible 33" class="shoe-image">
+              <img src="./assets/images/nikeSports1-1.png" alt="Sports Invincible 33 Hover" class="shoe-image-hover">
+              <div class="collection-name">Nike Invincible 33</div>
+            </div>
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/converseSports1.png" alt="Converse Weapon XA" class="shoe-image" style="margin-top: 10px;">
+              <img src="./assets/images/converseSports1-1.png" alt="Sports Converse Weapon XA Hover" class="shoe-image-hover" style="margin-top: 10px;">
+              <div class="collection-name" style="margin-top: 18px;">Converse Weapon XA</div>
+            </div>
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/worldbalanceSports1.png" alt="World Balance PutBack" class="shoe-image">
+              <img src="./assets/images/worldbalanceSports1-1.png" alt="Sports PutBack Hover" class="shoe-image-hover">
+              <div class="collection-name">World Balance PutBack</div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="casual-images" class="collection-category col-12 d-none">
+          <div class="row">
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/adidasCasual1.png" alt="Adidas Grand Court" class="shoe-image">
+              <img src="./assets/images/adidasCasual1-1.png" alt="Casual Grand Court Hover" class="shoe-image-hover">
+              <div class="collection-name">Adidas Grand Court</div>
+            </div>
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/nikeCasual1.png" alt="Nike W Blazer Mid 77" class="shoe-image">
+              <img src="./assets/images/nikeCasual1-1.png" alt="Casual W Blazer Mid 77 Hover" class="shoe-image-hover">
+              <div class="collection-name">Nike W Blazer Mid 77</div>
+            </div>
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/converseCasual1.png" alt="Nike Dunks Tour" class="shoe-image" style="margin-top: 10px;">
+              <img src="./assets/images/converseCasual1-1.png" alt="Casual Blaze Classic Hover" class="shoe-image-hover" style="margin-top: 10px;">
+              <div class="collection-name" style="margin-top: 18px;">Converse Blaze Classic</div>
+            </div>
+            <div class="latest-item">
+              <img src="./assets/images/worldbalanceCasual1.png" alt="Nike Dunks Tour" class="shoe-image">
+              <img src="./assets/images/worldbalanceCasual1-1.png" alt="Casual Soren Hover" class="shoe-image-hover">
+              <div class="collection-name">World Balance Soren</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="running-images" class="collection-category col-12 d-none">
+          <div class="row">
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/adidasRunning1.png" alt="Adidas Simba" class="shoe-image">
+              <img src="./assets/images/adidasRunning1-1.png" alt="Running Simba Hover" class="shoe-image-hover">
+              <div class="collection-name">Adidas Simba</div>
+            </div>
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/nikeRunning1.png" alt="Nike Pegasus 41" class="shoe-image">
+              <img src="./assets/images/nikeRunning1-1.png" alt="Running Pegasus 41 Hover" class="shoe-image-hover">
+              <div class="collection-name">Nike Pegasus 41</div>
+            </div>
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/converseRunning1.png" alt="Converse X Shai All Star" class="shoe-image" style="margin-top: 10px;">
+              <img src="./assets/images/converseRunning1-1.png" alt="Running X Shai All Star Hover" class="shoe-image-hover" style="margin-top: 10px;">
+              <div class="collection-name" style="margin-top: 18px;">Converse X Shai All Star</div>
+            </div>
+            <div class="latest-item col-md-3">
+              <img src="./assets/images/worldbalanceRunning1.png" alt="World Balance Speeds" class="shoe-image">
+              <img src="./assets/images/worldbalanceRunning1-1.png" alt="Running Speeds Hover" class="shoe-image-hover">
+              <div class="collection-name">World Balance Speeds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </div>
+</div>
+<!-- END NG WEBSITE CONTENT -->
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- SIGN IN MODAL -->
+<div class="modal fade img-fluid" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+              <video autoplay muted loop class="video-fluid w-100 h-100" style="object-fit: cover; border-radius: 5px;">
+                <source src="./assets/videos/loginVideo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-md-8">
+              <form id="signInForm" onsubmit="validateSignIn(event)">
+                <center><h1>Sign In</h1></center><br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="logmail" class="form-label"><span class="highlightedText2">*</span> Email</label>
+                    <input type="email" class="form-control" id="logmail" placeholder="Email" required>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="logpass" class="form-label"><span class="highlightedText2">*</span> Password</label>
+                    <input type="password" class="form-control" id="logpass" placeholder="Password" required minlength="8">
+                  </div>
+                </div>
+                <br>
+                <center>
+                  <button type="submit" class="btn btn-dark submit">Login</button>
+                  <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </center>
+                <br><br>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--END NG SIGN IN MODAL-->
+
+<!-- REGISTER MODAL -->
+<div class="modal fade img-fluid" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-body">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-4 d-flex align-items-center justify-content-center">
+                          <video autoplay muted loop class="video-fluid w-100 h-100" style="object-fit: cover; border-radius: 5px;">
+                              <source src="./assets/videos/registerVideo.mp4" type="video/mp4">
+                          </video>
+                      </div>
+                      <div class="col-md-8">
+                          <form id="registerForm" onsubmit="validateRegistration(event)">
+                              <center><h1>Registration</h1></center><br>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <label for="email" class="form-label"><span class="highlightedText2">*</span> Email</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label for="confirmEmail" class="form-label"><span class="highlightedText2">*</span> Confirm Email</label>
+                                      <input type="email" class="form-control" id="confirmEmail" placeholder="Confirm Email" required>
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <label for="password" class="form-label"><span class="highlightedText2">*</span> Password</label>
+                                      <input type="password" class="form-control" id="password" placeholder="Password" required minlength="8">
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label for="confirmPassword" class="form-label"><span class="highlightedText2">*</span> Confirm Password</label>
+                                      <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required minlength="8">
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <label for="phone" class="form-label"><span class="highlightedText2">*</span> Phone Number</label>
+                                      <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required pattern="\d{11}" title="Please enter exactly 11 digits" oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="11">
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label for="Zip" class="form-label">Zip Code</label>
+                                      <input type="text" class="form-control" id="Zip" placeholder="Zip Code" pattern="\d{4}" title="Please enter exactly 4 digits" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 4)" maxlength="4">
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <label for="province" class="form-label">Province</label>
+                                      <select class="form-select" id="province">
+                                        <option>Select Province</option>
+                                        <option>Select Province</option>
+                                        <option>Abra</option>
+                                        <option>Agusan del Norte</option>
+                                        <option>Agusan del Sur</option>
+                                        <option>Aklan</option>
+                                        <option>Albay</option>
+                                        <option>Antique</option>
+                                        <option>Apayao</option>
+                                        <option>Aurora</option>
+                                        <option>Basilan</option>
+                                        <option>Bataan</option>
+                                        <option>Batanes</option>
+                                        <option>Batangas</option>
+                                        <option>Benguet</option>
+                                        <option>Biliran</option>
+                                        <option>Bohol</option>
+                                        <option>Bukidnon</option>
+                                        <option>Bulacan</option>
+                                        <option>Cagayan</option>
+                                        <option>Camarines Norte</option>
+                                        <option>Camarines Sur</option>
+                                        <option>Camiguin</option>
+                                        <option>Capiz</option>
+                                        <option>Catanduanes</option>
+                                        <option>Cavite</option>
+                                        <option>Cebu</option>
+                                        <option>Cotabato</option>
+                                        <option>Davao de Oro</option>
+                                        <option>Davao del Norte</option>
+                                        <option>Davao del Sur</option>
+                                        <option>Davao Occidental</option>
+                                        <option>Davao Oriental</option>
+                                        <option>Dinagat Islands</option>
+                                        <option>Eastern Samar</option>
+                                        <option>Guimaras</option>
+                                        <option>Ifugao</option>
+                                        <option>Ilocos Norte</option>
+                                        <option>Ilocos Sur</option>
+                                        <option>Iloilo</option>
+                                        <option>Isabela</option>
+                                        <option>Kalinga</option>
+                                        <option>La Union</option>
+                                        <option>Laguna</option>
+                                        <option>Lanao del Norte</option>
+                                        <option>Lanao del Sur</option>
+                                        <option>Leyte</option>
+                                        <option>Maguindanao</option>
+                                        <option>Marinduque</option>
+                                        <option>Masbate</option>
+                                        <option>Metro Manila</option>
+                                        <option>Misamis Occidental</option>
+                                        <option>Misamis Oriental</option>
+                                        <option>Mountain Province</option>
+                                        <option>Negros Occidental</option>
+                                        <option>Negros Oriental</option>
+                                        <option>Northern Samar</option>
+                                        <option>Nueva Ecija</option>
+                                        <option>Nueva Vizcaya</option>
+                                        <option>Occidental Mindoro</option>
+                                        <option>Oriental Mindoro</option>
+                                        <option>Palawan</option>
+                                        <option>Pampanga</option>
+                                        <option>Pangasinan</option>
+                                        <option>Quezon</option>
+                                        <option>Quirino</option>
+                                        <option>Rizal</option>
+                                        <option>Romblon</option>
+                                        <option>Samar</option>
+                                        <option>Sarangani</option>
+                                        <option>Siquijor</option>
+                                        <option>Sorsogon</option>
+                                        <option>South Cotabato</option>
+                                        <option>Southern Leyte</option>
+                                        <option>Sultan Kudarat</option>
+                                        <option>Sulu</option>
+                                        <option>Surigao del Norte</option>
+                                        <option>Surigao del Sur</option>
+                                        <option>Tarlac</option>
+                                        <option>Tawi-Tawi</option>
+                                        <option>Zambales</option>
+                                        <option>Zamboanga del Norte</option>
+                                        <option>Zamboanga del Sur</option>
+                                        <option>Zamboanga Sibugay</option>
+                                      </select>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label for="city" class="form-label">City</label>
+                                      <select class="form-select" id="city">
+                                        <option>Select City</option>
+                                        <option>Caloocan</option>
+                                        <option>Las Piñas</option>
+                                        <option>Makati</option>
+                                        <option>Malabon</option>
+                                        <option>Mandaluyong</option>
+                                        <option>Manila</option>
+                                        <option>Marikina</option>
+                                        <option>Muntinlupa</option>
+                                        <option>Navotas</option>
+                                        <option>Parañaque</option>
+                                        <option>Pasay</option>
+                                        <option>Pasig</option>
+                                        <option>Quezon City</option>
+                                        <option>San Juan</option>
+                                        <option>Taguig</option>
+                                        <option>Valenzuela</option>
+                                        <option>Angeles</option>
+                                        <option>Baguio</option>
+                                        <option>Cebu City</option>
+                                        <option>Davao City</option>
+                                        <option>Iloilo City</option>
+                                        <option>Zamboanga City</option>
+                                        <option>Bacoor City</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <label for="address" class="form-label">Address</label>
+                                      <input type="text" class="form-control" id="address" placeholder="Address">
+                                  </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-md-12 d-flex justify-content-center mt-3">
+                                      <button type="submit" class="btn btn-dark me-2">Submit</button>
+                                      <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              <br><br>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- END NG REGISTER MODAL -->
+<!-- END NG WEBSITE CONTENT -->
+
+<!-- BACK TO TOP BUTTON -->
+<button type="button" class="btn btn-warning btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- END NG BACK TO TOP BUTTON -->
+
+<!-- START NG FOOTER -->
+<div id="footer" class="section"></div>
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 footer-links">
+        <div class="row">
+          <div class="col-md-6">
+            <h5><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" style="color: white; text-decoration: none;">Contact Us</a></h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Become A Member</a></li>
+              <li><a href="#">Send Us Feedback</a></li>
+              <li><a href="#">Meet the Developers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <br><br><br><br>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center pt-3">
+          <div class="col-md-12 footer-align">
+            <span>© 2024 StreetzMNL, Inc. All rights reserved</span>
+            <a href="#" class="text-white">Terms of Sale</a>
+            <a href="#" class="text-white">Terms of Use</a>
+            <a href="#" class="text-white">StreetzMNL Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-md-end footer-socials">
+        <h5 class="footerH5First">Follow Us</h5>
+        <a href="https://www.facebook.com/TIP1962official" class="social-icon"><img src="./assets/images/facebook.png" alt="Facebook Icon" width="30"></a>
+        <a href="https://www.instagram.com/tip1962official/?hl=en" class="social-icon"><img src="./assets/images/instagram.png" alt="Instagram Icon" width="30"></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social-icon"><img src="./assets/images/youtube.png" alt="YouTube Icon" width="30"></a>
+        <h5 class="footerH5Second">Payment Options</h5>
+        <img src="./assets/images/gcash.png" alt="GCash Icon" class="cash-icon" width="55"></a>
+        <img src="./assets/images/paypal.png" alt="PayPal Icon" class="cash-icon" width="90"></a>
+        <img src="./assets/images/paymaya.png" alt="PayMaya Icon" class="cash-icon" width="55"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--END NG FOOTER-->
+
+<!-- SCRIPT LINKS -->
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/850a6f41ca.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- END NG SCRIPT LINKS -->
+
+</body>
+</html>
