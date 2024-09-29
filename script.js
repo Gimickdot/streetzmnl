@@ -1,42 +1,4 @@
-// BACK ON TOP BUTTON //
-let mybutton = document.getElementById("btn-back-to-top");
-
-window.onscroll = function () 
-{
-  scrollFunction();
-};
-
-function scrollFunction() 
-{
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-  let windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-  let documentHeight = document.documentElement.scrollHeight;
-
-  let distanceFromBottom = documentHeight - (scrollTop + windowHeight);
-
-  if (distanceFromBottom <= windowHeight) 
-  {
-    mybutton.style.display = "block";
-  } 
-
-  else 
-  {
-    mybutton.style.display = "none";
-  }
-}
-
-mybutton.addEventListener("click", backToTop);
-
-function backToTop() 
-{
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-// END NG BACK ON TOP BUTTON //
-
-// SHOW LATEST IMAGES & LOAD THE SPORTS IMAGES WHEN THE WEBSITE FIRST LOAD //
+// SHOW LATEST IMAGES PAG NAG LOAD //
 function showImages(category) 
 {
     document.querySelectorAll('.collection-category').forEach(item => item.classList.add('d-none'));
@@ -49,7 +11,7 @@ window.onload = function()
 };
 // END NG SHOW LATEST IMAGES //
 
-// SIGN IN VALIDATION //
+// START NG SIGN IN VALIDATION //
 function validateSignIn(event) 
 {
   event.preventDefault();

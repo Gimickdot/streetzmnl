@@ -117,8 +117,10 @@ h2
 
 .collection-name 
 {
+  text-align: center;
+  margin-top: 10px;
   padding: 15px;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -201,20 +203,6 @@ h2
 .latest-item:hover .shoe-image-hover 
 {
   opacity: 1;
-}
-
-.collection-name 
-{
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.collection-name {
-  padding: 15px;
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
 @media (max-width: 1024px) 
@@ -338,16 +326,3 @@ footer a.text-white
   cursor: pointer;
 }
 /* END OF FOOTER CSS */
-
-/* END NG FADE IN PAG NAG LOAD*/
-
-/*BACK TO TOP BUTTON*/
-#btn-back-to-top 
-{
-  position: fixed;
-  bottom: 50px;
-  right: 40px;
-  display: none;
-  border-radius:50% ;
-}
-/*END NG BACK TO TOP BUTTON*/
