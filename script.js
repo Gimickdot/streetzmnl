@@ -1,4 +1,4 @@
-// SHOW LATEST IMAGES PAG NAG LOAD //
+// SHOW LATEST IMAGES & LOAD THE SPORTS IMAGES WHEN THE WEBSITE FIRST LOAD //
 function showImages(category) 
 {
     document.querySelectorAll('.collection-category').forEach(item => item.classList.add('d-none'));
@@ -11,7 +11,7 @@ window.onload = function()
 };
 // END NG SHOW LATEST IMAGES //
 
-// START NG SIGN IN VALIDATION //
+// SIGN IN VALIDATION //
 function validateSignIn(event) 
 {
   event.preventDefault();
@@ -80,3 +80,20 @@ function validateRegistration(event)
   }
 }
 //END NG REGISTRATION VALIDATION //
+
+
+// START FAQ //
+function toggleAnswer(faq) 
+{
+  const answer = faq.nextElementSibling;
+  const icon = faq.querySelector('.icon');
+  
+  if (answer.style.display === 'none' || answer.style.display === '') {
+      answer.style.display = 'block';
+      icon.textContent = '▲';
+  } else {
+      answer.style.display = 'none';
+      icon.textContent = '▼';
+  }
+}
+// END FAQ
